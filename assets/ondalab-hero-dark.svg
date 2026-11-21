@@ -1,0 +1,66 @@
+<svg width="720" height="180" viewBox="0 0 720 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ondas sonoras animadas">
+  <defs>
+    <linearGradient id="waveA" x1="0" y1="0" x2="720" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="55%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#e879f9" />
+    </linearGradient>
+    <linearGradient id="waveB" x1="0" y1="0" x2="720" y2="0">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="60%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="waveC" x1="0" y1="0" x2="720" y2="0">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g opacity="0.9" filter="url(#glow)">
+    <path d="M0 82 C 60 50, 120 112, 180 82 S 300 50, 360 82 S 480 114, 540 82 S 660 52, 720 82"
+          stroke="url(#waveA)" stroke-width="4" stroke-linecap="round">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite"
+               values="M0 82 C 60 50, 120 112, 180 82 S 300 50, 360 82 S 480 114, 540 82 S 660 52, 720 82;
+                       M0 82 C 60 114, 120 50, 180 82 S 300 114, 360 82 S 480 50, 540 82 S 660 112, 720 82;
+                       M0 82 C 60 50, 120 112, 180 82 S 300 50, 360 82 S 480 114, 540 82 S 660 52, 720 82" />
+    </path>
+    <path d="M0 96 C 70 70, 140 122, 210 96 S 350 70, 420 96 S 560 122, 630 96 S 690 80, 720 96"
+          stroke="url(#waveB)" stroke-width="3" stroke-linecap="round" opacity="0.75">
+      <animate attributeName="d" dur="5.5s" repeatCount="indefinite"
+               values="M0 96 C 70 70, 140 122, 210 96 S 350 70, 420 96 S 560 122, 630 96 S 690 80, 720 96;
+                       M0 96 C 70 122, 140 70, 210 96 S 350 122, 420 96 S 560 70, 630 96 S 690 112, 720 96;
+                       M0 96 C 70 70, 140 122, 210 96 S 350 70, 420 96 S 560 122, 630 96 S 690 80, 720 96" />
+    </path>
+    <path d="M0 108 C 50 96, 110 124, 170 108 S 290 92, 350 108 S 470 124, 530 108 S 650 92, 720 108"
+          stroke="url(#waveC)" stroke-width="2" stroke-linecap="round" opacity="0.55">
+      <animate attributeName="d" dur="7s" repeatCount="indefinite"
+               values="M0 108 C 50 96, 110 124, 170 108 S 290 92, 350 108 S 470 124, 530 108 S 650 92, 720 108;
+                       M0 108 C 50 124, 110 92, 170 108 S 290 124, 350 108 S 470 92, 530 108 S 650 124, 720 108;
+                       M0 108 C 50 96, 110 124, 170 108 S 290 92, 350 108 S 470 124, 530 108 S 650 92, 720 108" />
+    </path>
+  </g>
+
+  <g fill="#a5b4fc">
+    <path d="M545 44 v22 a8 8 0 1 1 -6 -7.7v-12.3l18 -4v18a7 7 0 1 1 -5 -6.8v-14.2z">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="3.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2; 1; 0.2" dur="3.2s" repeatCount="indefinite" />
+    </path>
+    <path d="M596 34 v20 a7 7 0 1 1 -5 -6.8v-11.2l14 -3v16a6 6 0 1 1 -4 -5.8v-12z">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.15; 0.9; 0.15" dur="4.1s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <text x="360" y="154" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" letter-spacing="3" fill="#94a3b8">
+    ONDAS · DSP · SONIDO
+    <animate attributeName="opacity" values="0.5; 1; 0.5" dur="4s" repeatCount="indefinite" />
+  </text>
+</svg>
